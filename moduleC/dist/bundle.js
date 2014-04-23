@@ -430,10 +430,13 @@ var requirejs, require, define;
 
 define("almond", function(){});
 
-define('moduleC',['require','exports','module','moduleA'],function (require, exports, module) {/*global require module */
+define('moduleC',['require','exports','module','http://localhost:8080/moduleA/dist/bundle.js'],function (require, exports, module) {/*global require module */
 
 
-var moduleA = require('moduleA');
+// none of these work
+//var moduleA = require('moduleA');
+//var moduleA = require('moduleA/dist/bundle');
+var moduleA = require('http://localhost:8080/moduleA/dist/bundle.js');
 
 module.exports = function() {
   console.log('moduleC exported function');
