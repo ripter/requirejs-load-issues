@@ -1,0 +1,22 @@
+{
+  "name": "require-load-issues",
+  "version": "0.0.0",
+  "authors": [
+    "Chris Richards <ripter001@gmail.com>"
+  ],
+  "main": "bin/server.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "r.js": "~2.1.11",
+    "jquery": "~2.1.0",
+    "cajon": "~0.2.0"
+  }
+}

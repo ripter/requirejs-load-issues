@@ -1,0 +1,1 @@
+define(function(e,t,n){var r=e("jquery");n.exports=function(){console.log("moduleB exported function"),r("body").append("<h1>Module B using jquery</h1>")},define("src/js/main",function(){})});
