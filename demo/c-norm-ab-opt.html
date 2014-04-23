@@ -14,23 +14,26 @@
 		<p>
 			It's all console baby
 		</p>
+		<img src="cat.jpg" alt="consul has errurz">
 		<script>
 			require.config({
 				baseUrl: '/'
 				, paths: {
 					'jquery': 'bower_components/jquery/dist/jquery'
+			    // this doesn't work, 
+			    , 'moduleA': 'moduleA/dist/bundle'
 				}
 			});
 
 			require([
-				'moduleA/src/js/main'
-				, 'moduleB/dist/bundle'
+				'moduleB/dist/bundle'
+			  , 'moduleC/src/js/main'
 			], function(
-				ModuleA
-				, ModuleB
+				ModuleB
+			  , ModuleC
 			) {
-				ModuleA();
 				ModuleB();
+			  ModuleC();
 			});
 	  </script>
 	</body>

@@ -4,17 +4,62 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
 		
 		<script src="/bower_components/cajon/cajon.js"></script>
 	</head>
 	<body>
-		<h2>Works, but can't be used on Prod/QA</h2>
-		<a href="a-norm-b-norm.html">A is unoptimized, B is unoptimized</a>
+		
+		<table class="table table-striped">
+			<tr class="danger">
+				<td>
+					<a href="c-norm-ab-opt.html">Link</a>
+				</td>
+				<td>
+					C loads require(A).
+				</td>
+				<td>
+					A, B are optimized
+				</td>
+			</tr>
+			
 
-		<h2>Does not work, this is Prod/QA</h2>
-		<a href="a-opt-b-opt.html">A is optimized, B is optimized</a>
+			<tr class="success">
+				<td>
+					<a href="a-norm-b-norm.html">Link</a>
+				</td>
+				<td>
+					Load A, B with require([])
+				</td>
+				<td>
+				</td>
+			</tr>
 
-		<h2>Does not work</h2>
-		<a href="a-norm-b-opt.html">A is unoptimized, B is optimized</a>
+			<tr class="success">
+				<td>
+					<a href="a-norm-b-opt.html">Link</a>
+				</td>
+				<td>
+					Load A, B with require([])
+				</td>
+				<td>
+					B is optimized
+				</td>
+			</tr>
+			
+
+			<tr class="success">
+				<td>
+					<a href="a-opt-b-opt.html">Link</a>
+				</td>
+				<td>
+					Load A, B with require([])
+				</td>
+				<td>
+					A, B is optimized
+				</td>
+			</tr>
+	  </table>
 	</body>
 </html>
