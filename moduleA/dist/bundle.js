@@ -1,0 +1,1 @@
+define(function(e,t,n){n.exports=function(){console.log("moduleA exported function")},define("src/js/main",function(){})});
