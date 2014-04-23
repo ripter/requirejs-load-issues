@@ -1,5 +1,4 @@
 (function (root, factory) {
-debugger;
     if ((typeof Livefyre === 'object') && (typeof Livefyre.define === 'function') && Livefyre.define.amd) {
         // Livefyre.define is defined by https://github.com/Livefyre/require
         Livefyre.define([], factory);
