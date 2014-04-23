@@ -10,7 +10,7 @@
 
   , paths: {
     // doesn't work either way
-    //'jquery': 'empty:'
-    'jquery': 'bower_components/jquery/dist/jquery'
+    'jquery': 'empty:'
+    //'jquery': '../bower_components/jquery/dist/jquery'
   }
 })

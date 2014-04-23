@@ -18,6 +18,8 @@
 				baseUrl: '/'
 				, paths: {
 					'jquery': 'bower_components/jquery/dist/jquery'
+				}, shim: {
+					'moduleB/dist/bundle':{ deps:['jquery'] }
 				}
 			});
 
@@ -31,6 +33,6 @@
 				ModuleA();
 				ModuleB();
 			});
-	  </script>
+		</script>
 	</body>
 </html>
