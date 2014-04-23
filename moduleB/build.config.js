@@ -3,12 +3,9 @@
   , out: 'dist/bundle.js'
   , optimize: 'none'
   , include: ['almond']
-  // wrap is required to load in require([])
   , paths: {
-    almond: '../lib/almond/almond',
+    almond: '../bower_components/almond/almond',
     'moduleB': 'src/js/main',
-    // doesn't work either way
-    // 'jquery': 'empty:'
     'jquery': '../bower_components/jquery/dist/jquery'
   },
   cjsTranslate: true,
