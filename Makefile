@@ -5,8 +5,9 @@ all: build
 run: build 
 	./bin/server.js
 
-build: node_modules moduleB/dist/bundle.js
+build: node_modules moduleB/dist/bundle.js moduleA/dist/bundle.js
 
+libs: node_modules bower_components
 
 node_modules:
 	npm install
@@ -14,5 +15,10 @@ node_modules:
 bower_components:
 	./node_modules/.bin/bower install
 
-moduleB/dist/bundle.js: node_modules bower_components
+moduleB/dist/bundle.js: libs
 	node ./bower_components/r.js/dist/r.js -o moduleB/build.config.js
+	touch node_modules
+
+moduleA/dist/bundle.js: libs
+	node ./bower_components/r.js/dist/r.js -o moduleA/build.config.js
+	touch node_modules
