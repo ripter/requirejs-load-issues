@@ -20,5 +20,8 @@
     "cajon": "~0.2.0",
     "almond": "~0.2.9",
     "bootstrap": "~3.1.1"
+  },
+  "devDependencies": {
+    "requirejs": "~2.1.11"
   }
 }

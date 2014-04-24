@@ -430,11 +430,14 @@ var requirejs, require, define;
 
 define("almond", function(){});
 
-define('moduleC',['require','exports','module','moduleA'],function (require, exports, module) {/*global require module */
+define('moduleC',['require','exports','module','http://cdn.livefyre.com/libs/collection-manager/rc/main.js'],function (require, exports, module) {/*global require module */
 
 
-var moduleA = require('moduleA');
-
+// none of these work
+//var moduleA = require('moduleA');
+//var moduleA = require('moduleA/dist/bundle');
+// var moduleA = require('http://localhost:8081/moduleA/dist/bundle.js');
+var moduleA = require('http://cdn.livefyre.com/libs/collection-manager/rc/main.js');
 module.exports = function() {
   console.log('moduleC exported function');
   moduleA();
