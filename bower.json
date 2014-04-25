@@ -19,6 +19,8 @@
     "jquery": "~2.1.0",
     "cajon": "~0.2.0",
     "almond": "~0.2.9",
-    "bootstrap": "~3.1.1"
+    "bootstrap": "~3.1.1",
+    "requirejs-text": "~2.0.10",
+    "requirejs-plugins": "~1.0.2"
   }
 }

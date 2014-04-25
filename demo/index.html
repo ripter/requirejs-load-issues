@@ -11,55 +11,16 @@
 	</head>
 	<body>
 		
-		<table class="table table-striped">
-			<tr class="danger">
-				<td>
-					<a href="c-norm-ab-opt.html">Link</a>
-				</td>
-				<td>
-					C loads require(A).
-				</td>
-				<td>
-					A, B are optimized
-				</td>
-			</tr>
+		<h2>Run make to see the issue</h2>
+		
+		<script>
+      require.config({
+			  studio: 'studio/dist/main.js'
+			});
 			
-
-			<tr class="success">
-				<td>
-					<a href="a-norm-b-norm.html">Link</a>
-				</td>
-				<td>
-					Load A, B with require([])
-				</td>
-				<td>
-				</td>
-			</tr>
-
-			<tr class="success">
-				<td>
-					<a href="a-norm-b-opt.html">Link</a>
-				</td>
-				<td>
-					Load A, B with require([])
-				</td>
-				<td>
-					B is optimized
-				</td>
-			</tr>
-			
-
-			<tr class="success">
-				<td>
-					<a href="a-opt-b-opt.html">Link</a>
-				</td>
-				<td>
-					Load A, B with require([])
-				</td>
-				<td>
-					A, B is optimized
-				</td>
-			</tr>
-	  </table>
+			require(['studio'], function(Studio) {
+			  console.log('Studio', Studio);
+			});
+	  </script>
 	</body>
 </html>
