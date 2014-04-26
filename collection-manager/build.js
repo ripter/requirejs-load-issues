@@ -3,8 +3,8 @@
   , baseUrl: './'
   , name: 'collection-manager'
   , stubModules: ['text', 'json']
-  , include: ['almond']
-  , namespace: 'LFCM'
+  /*, include: ['almond']*/
+  /*, namespace: 'LFCM'*/
   , out: 'dist/main.js'
   , inlineText: true
   , optimize: 'none'
@@ -13,8 +13,8 @@
     'collection-manager': 'src/js/main'
     , almond: '../bower_components/almond/almond'
   }
-  , wrap: {
+  /*, wrap: {
     startFile: './wrap-start.frag',
     endFile: './wrap-end.frag'
-  }
+  }*/
 })
