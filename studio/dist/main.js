@@ -8010,3 +8010,17 @@ console.log('timezones', timezone);
     //value to use for the public API for the built file.
     return LFCM.require('collection-manager');
 }());
+
+define("collection-manager", (function (global) {
+    return function () {
+        var ret, fn;
+        return ret || global.LFCM;
+    };
+}(this)));
+
+define('studio',['require','exports','module','collection-manager'],function (require, exports, module) {
+var collections = require('collection-manager');
+
+console.log('collections', collections);
+});
+

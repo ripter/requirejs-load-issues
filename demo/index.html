@@ -15,7 +15,9 @@
 		
 		<script>
       require.config({
-			  studio: 'studio/dist/main.js'
+      		  paths: {
+				  studio: '../studio/dist/main.js'
+			  }
 			});
 			
 			require(['studio'], function(Studio) {
