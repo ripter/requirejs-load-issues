@@ -2,5 +2,10 @@ define('studio',['require','exports','module','collection-manager'],function (re
 var collections = require('collection-manager');
 
 console.log('collections', collections);
+
+module.exports = {
+    studio: 'yes'
+};
+
 });
 

@@ -7,7 +7,8 @@
   , optimize: 'none'
   , cjsTranslate: true
   , paths: {
-    studio: 'src/js/main'
+    studio: 'src/js/main',
+    'collection-manager': 'empty:'
   }
   , exclude: ['collection-manager']
 })
